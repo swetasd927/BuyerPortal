@@ -1,4 +1,3 @@
-```md
 # Nestly — Buyer Portal
 
 A simple and functional **real-estate buyer portal** where users can sign up, log in, and manage their favorite properties.
@@ -7,17 +6,17 @@ Built as part of a **Junior Full-Stack Engineer technical assessment**, focusing
 
 ---
 
-##  Features
+## Features
 
--  User Authentication (Register/Login)
+- User Authentication (Register/Login)
 - Personalized Dashboard
 - Add/Remove Favorite Properties
--  User-specific data access (authorization)
--  Clean API with validation & error handling
+- User-specific data access (authorization)
+- Clean API with validation & error handling
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 **Frontend**
 - React (Vite)
@@ -37,14 +36,22 @@ Built as part of a **Junior Full-Stack Engineer technical assessment**, focusing
 ## Project Structure
 
 ```
-
-root/
+BuyerPortal/
 │
-├── backend/              # Express API (Port 5000)
-├── frontend/BUYERPORTAL  # React App (Port 5173)
+├── backend/                  # Express API (Port 5000)
+│   ├── server.js
+│   ├── package.json
+│   └── seedtest.js
+│
+├── frontend/
+│   └── BUYERPORTAL/          # React App (Port 5173)
+│       ├── src/
+│       ├── public/
+│       ├── images/
+│       └── package.json
+│
 └── README.md
-
-````
+```
 
 ---
 
@@ -55,7 +62,7 @@ root/
 ```bash
 git clone https://github.com/swetasd927/BuyerPortal.git
 cd BuyerPortal
-````
+```
 
 ---
 
@@ -67,7 +74,7 @@ npm install
 npm start
 ```
 
- [http://localhost:5000](http://localhost:5000)
+http://localhost:5000
 
 ---
 
@@ -79,31 +86,27 @@ npm install
 npm run dev
 ```
 
- [http://localhost:5173](http://localhost:5173)
+http://localhost:5173
 
 ---
 
-##  Key Implementation Details
+## Key Implementation Details
 
-* **Password Security**
+- **Password Security**
+  - Passwords are hashed (no plain text storage)
 
-  * Passwords are hashed (no plain text storage)
+- **Authorization**
+  - Users can only access and modify their own favorites
 
-* **Authorization**
+- **Clean Architecture**
+  - Separation of routes, middleware, and DB layer
 
-  * Users can only access and modify their own favorites
-
-* **Clean Architecture**
-
-  * Separation of routes, middleware,  and DB layer
-
-* **Error Handling**
-
-  * Clear success and error responses
+- **Error Handling**
+  - Clear success and error responses
 
 ---
 
-##  Screenshots
+## Screenshots
 
 ### Login & Register
 <p align="center">
@@ -126,39 +129,39 @@ npm run dev
 
 ---
 
-###  Add / Remove Favorites (Dashboard)
+### Add / Remove Favorites (Dashboard)
 <p align="center">
   <img src="frontend/BUYERPORTAL/images/AddOrRemoveDashboardProperties.png" width="700"/>
 </p>
 
 ---
 
-###  Create Account / Sign In Flow
+### Create Account / Sign In Flow
 <p align="center">
   <img src="frontend/BUYERPORTAL/images/CreateAccountORSignIn (1).png" width="700"/>
 </p>
 
-##  Example Flow
-
-1. Register a new account
-2. Login with credentials
-3. Access dashboard
-4. Browse properties
-5. Add/remove favorites
-6. View personalized favorites list
 ---
 
-##  Future Improvements
-* UI/UX improvements
-* Search & filters
-* Admin dashboard
+## Example Flow
+
+1. Register a new account  
+2. Login with credentials  
+3. Access dashboard  
+4. Browse properties  
+5. Add/remove favorites  
+6. View personalized favorites list  
 
 ---
 
-### Author
+## Future Improvements
+
+- UI/UX improvements  
+- Search & filters  
+- Admin dashboard  
+
+---
+
+## Author
 
 **Sweta Dahal**
-
-```
-
----
