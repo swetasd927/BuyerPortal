@@ -103,6 +103,41 @@ npm run dev
 
 ---
 
+##  Screenshots
+
+### Login & Register
+<p align="center">
+  <img src="frontend/BUYERPORTAL/images/LoginAndRegister.png" width="700"/>
+</p>
+
+---
+
+### Dashboard
+<p align="center">
+  <img src="frontend/BUYERPORTAL/images/Dashboard.png" width="700"/>
+</p>
+
+---
+
+### All Listed Properties
+<p align="center">
+  <img src="frontend/BUYERPORTAL/images/AllListedProperties.png" width="700"/>
+</p>
+
+---
+
+###  Add / Remove Favorites (Dashboard)
+<p align="center">
+  <img src="frontend/BUYERPORTAL/images/AddOrRemoveDashboardProperties.png" width="700"/>
+</p>
+
+---
+
+###  Create Account / Sign In Flow
+<p align="center">
+  <img src="frontend/BUYERPORTAL/images/CreateAccountORSignIn (1).png" width="700"/>
+</p>
+
 ##  Example Flow
 
 1. Register a new account
@@ -120,7 +155,7 @@ npm run dev
 
 ---
 
-### 👩‍💻 Author
+### Author
 
 **Sweta Dahal**
 
