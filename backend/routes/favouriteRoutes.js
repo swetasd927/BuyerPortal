@@ -7,7 +7,6 @@ const router = express.Router();
 
 router.use(protect);
 
-// GET /api/favourites
 router.get("/", async (req, res) => {
   try {
     const favourites = await Favourite.find({ user: req.user._id }).populate("property");
@@ -17,7 +16,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// POST /api/favourites/:propertyId
 router.post("/:propertyId", async (req, res) => {
   const { propertyId } = req.params;
   try {
@@ -40,7 +38,6 @@ router.post("/:propertyId", async (req, res) => {
   }
 });
 
-// DELETE /api/favourites/:propertyId
 router.delete("/:propertyId", async (req, res) => {
   const { propertyId } = req.params;
   try {

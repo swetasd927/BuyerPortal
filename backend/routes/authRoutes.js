@@ -9,7 +9,6 @@ const generateToken = (id) => {
   return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: "7d" });
 };
 
-// POST /api/auth/register
 router.post("/register", async (req, res) => {
   const { name, email, password } = req.body;
 
@@ -31,11 +30,11 @@ router.post("/register", async (req, res) => {
       user: { id: user._id, name: user.name, email: user.email, role: user.role },
     });
   } catch (error) {
+     console.error("REGISTER ERROR:", error.message);
     res.status(500).json({ message: "Server error", error: error.message });
   }
 });
 
-// POST /api/auth/login
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
@@ -60,7 +59,6 @@ router.post("/login", async (req, res) => {
   }
 });
 
-// GET /api/auth/me
 router.get("/me", protect, async (req, res) => {
   res.json({
     id: req.user._id,
